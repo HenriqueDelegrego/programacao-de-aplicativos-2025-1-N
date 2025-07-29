@@ -4,9 +4,9 @@ Aqui você encontrará todos os códigos, exemplos, exercícios e projetos que d
 
 Como usar este repositório:
 
-  Faça o fork ou clone deste repositório
+Faça o fork ou clone deste repositório
 
-  Por exemplo: git clone https://github.com/HenriqueDelegrego/programacao-de-aplicativos-2025-1-N.git
+Por exemplo: git clone https://github.com/HenriqueDelegrego/programacao-de-aplicativos-2025-1-N.git
 
 Navegue pelos diretórios de acordo com as aulas separadas por dia
 
