@@ -5,6 +5,7 @@ public class Ex2 {
 
 	public static void main(String[] args) {
 
+	// Criação do scanner
 		Scanner input = new Scanner(System.in);
 		
 		DecimalFormat df = new DecimalFormat("0.00");
