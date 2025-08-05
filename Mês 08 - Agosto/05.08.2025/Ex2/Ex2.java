@@ -23,7 +23,7 @@ public class Ex2 {
 		System.out.println("Ele tem 19 anos");
 		System.out.println("Ele é estudante do SENAI");
 	}
-
+	// Criação do método maria
 	public static void maria() {
 		System.out.println("O nome dela é Maria");
 		System.out.println("Ela tem 22 anos");
