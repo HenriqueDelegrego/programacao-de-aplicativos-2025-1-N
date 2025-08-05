@@ -17,6 +17,7 @@ public class Ex2 {
 
 	}
 
+	// Criação do método joao
 	public static void joao() {
 		System.out.println("O nome dele é João");
 		System.out.println("Ele tem 19 anos");
