@@ -3,6 +3,7 @@ public class Ex1 {
 
 	public static void main(String[] args) {
 
+		// Criando um objeto do tipo Pessoa
 		Pessoa p1 = new Pessoa();
 		p1.nome = "Henrique";
 		p1.sexo = 'M';
