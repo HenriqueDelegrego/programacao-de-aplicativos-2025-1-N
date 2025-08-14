@@ -24,6 +24,7 @@ public class Ex6 {
 		unidadeDeFlorianopolis.qtdLaranjasVendidas = 214;
 		unidadeDeFlorianopolis.precoLaranja = 2.32;
 
+		// Criando um vetor de Mercado para armazenar as unidades
 		Mercado vetor[] = { unidadeDeBlumenau, unidadeDeFlorianopolis, unidadeDeJoinville };
 
 		// Quem teve a maior receita vendendo maçãs?
