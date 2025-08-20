@@ -154,5 +154,6 @@ public class Aeronave {
 		return "Aeronave [modelo=" + modelo + ", qtdPassageiros=" + qtdPassageiros + ", velMax=" + velMax
 				+ ", capCombustivel=" + capCombustivel + ", queimaCombustivel=" + queimaCombustivel + "]";
 	}
+	
 
 }
