@@ -13,6 +13,10 @@ public class Contribuinte {
 		setRendaAnual(rendaAnual);
 	}
 
+	/**
+	 * Calcula a alíquota do imposto de renda com base na renda anual
+	 * @return A alíquota correspondente
+	 */
 	private double calcularAliquota() {
 		if (rendaAnual <= 4000) {
 			return 0;
@@ -27,6 +31,10 @@ public class Contribuinte {
 		}
 	}
 
+	/**
+	 * Calcula o imposto de renda a ser pago com base na renda anual e na alíquota
+	 * @return O valor do imposto de renda a ser pago
+	 */
 	public double calcularImposto() {
 		return rendaAnual * calcularAliquota();
 	}
