@@ -14,13 +14,13 @@ public class Contribuinte {
 	}
 
 	public double calcularImposto() {
-		if (rendaAnual >= 0 && rendaAnual <= 4000) {
+		if (rendaAnual <= 4000) {
 			return 0;
-		} else if (rendaAnual >= 4001 && rendaAnual <= 9000) {
+		} else if (rendaAnual <= 9000) {
 			return rendaAnual * 0.058;
-		} else if (rendaAnual >= 9001 && rendaAnual <= 25000) {
+		} else if (rendaAnual <= 25000) {
 			return rendaAnual * 0.15;
-		} else if (rendaAnual >= 25001 && rendaAnual <= 35000) {
+		} else if (rendaAnual <= 35000) {
 			return rendaAnual * 0.275;
 		} else {
 			return rendaAnual * 0.3;
