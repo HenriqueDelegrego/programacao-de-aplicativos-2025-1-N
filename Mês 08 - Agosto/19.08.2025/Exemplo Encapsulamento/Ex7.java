@@ -4,7 +4,7 @@ public class Ex7 {
 	public static void main(String[] args) {
 
 		// Criação de quatro objetos do tipo Aeronave
-		// A aeronave a1 é criada co valores inválidos para teste
+		// A aeronave a1 é criada com valores inválidos para teste
 		Aeronave a1 = new Aeronave("        ", -200, -500, -1000, -5);
 		Aeronave a2 = new Aeronave("Cessna", 5, 250, 300, 2);
 		Aeronave a3 = new Aeronave("Fokker", 10, 200, 250, 2);
