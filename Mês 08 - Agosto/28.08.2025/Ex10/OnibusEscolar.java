@@ -17,7 +17,7 @@ public class OnibusEscolar {
 	 */
 	public void retirarAlunos(int qtdRemocao) {
 		if (qtdRemocao < 0) {
-			throw new IllegalArgumentException("Quantidade a ser removida inválida");
+			throw new IllegalArgumentException("Quantidade a ser removida não pode ser menor do que 0");
 		}
 		setQtdAlunos(qtdAlunos - qtdRemocao);
 	}
