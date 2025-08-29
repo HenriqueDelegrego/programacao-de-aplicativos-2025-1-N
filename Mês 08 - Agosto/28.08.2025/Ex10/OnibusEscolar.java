@@ -55,7 +55,7 @@ public class OnibusEscolar {
 	 */
 	public void setQtdProfessores(int qtdProfessores) {
 		if (qtdProfessores < 0) {
-			throw new IllegalArgumentException("Quantidade de professores inválida");
+			throw new IllegalArgumentException("Quantidade de professores não pode ser menor do que 0");
 		}
 		if (qtdProfessores == 0) {
 			setQtdAlunos(0);
