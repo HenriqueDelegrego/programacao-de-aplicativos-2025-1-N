@@ -9,6 +9,10 @@ public class Livro {
 		setEmprestado(emprestado);
 	}
 
+	/**
+	 * Marca o livro como emprestado
+	 * @throws IllegalArgumentException se o livro já estiver emprestado.
+	 */
 	public void emprestar() {
 
 		if (isEmprestado()) {
@@ -18,6 +22,10 @@ public class Livro {
 		emprestado = true;
 	}
 
+	/**
+	 * Marca o livro como devolvido
+	 * @throws IllegalArgumentException se o livro não estiver emprestado.
+	 */
 	public void devolver() {
 
 		if (!isEmprestado()) {
