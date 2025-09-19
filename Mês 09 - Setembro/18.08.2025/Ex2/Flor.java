@@ -1,11 +1,13 @@
 
 public class Flor {
 
+	// Atributos
 	private String nomeFlor;
 	private double preco;
 	private String nomeCliente;
 	private boolean presente;
 
+	// Construtor
 	public Flor(String nomeFlor, double preco, String nomeCliente, boolean presente) {
 		setNomeFlor(nomeFlor);
 		setPreco(preco);
@@ -13,6 +15,7 @@ public class Flor {
 		setPresente(presente);
 	}
 
+	// Getters e Setters
 	public String getNomeFlor() {
 		return nomeFlor;
 	}
