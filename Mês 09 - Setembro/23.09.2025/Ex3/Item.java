@@ -1,16 +1,22 @@
 
 public class Item {
 
+	// Atributos
 	private String nome;
 	private double preco;
 	private int qtdEstoque;
 
+	// Construtor
 	public Item(String nome, double preco, int qtdEstoque) {
 		setNome(nome);
 		setPreco(preco);
 		setQtdEstoque(qtdEstoque);
 	}
 
+	/**
+	 * Adiciona peças ao estoque
+	 * @param qtdPecas - Quantidade de peças a serem adicionadas
+	 */
 	public void adicionarPecaAoEstoque(int qtdPecas) {
 		if (qtdPecas <= 0) {
 			throw new IllegalArgumentException("Quantidade de peças a ser adicionada está inválida");
@@ -18,6 +24,10 @@ public class Item {
 		qtdEstoque += qtdPecas;
 	}
 
+	/**
+	 * Vende o produto, reduzindo a quantidade em estoque
+	 * @param qtdVenda - Quantidade a ser vendida
+	 */
 	public void venderProduto(int qtdVenda) {
 		if (qtdVenda <= 0) {
 			throw new IllegalArgumentException("Quantidade a ser vendida inválida");
@@ -31,6 +41,10 @@ public class Item {
 		qtdEstoque -= qtdVenda;
 	}
 
+	/**
+	 * Aplica um desconto ao preço do produto
+	 * @param desconto - Porcentagem de desconto a ser aplicada
+	 */
 	public void aplicarDesconto(double desconto) {
 		double porcentagemDesconto = desconto / 100;
 
