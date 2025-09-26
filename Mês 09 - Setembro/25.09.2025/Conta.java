@@ -1,14 +1,20 @@
 
 public class Conta {
 
+	// Atributos
 	private String nomeTitular;
 	private double saldo;
 
+	// Construtor
 	public Conta(String nomeTitular, double saldo) {
 		setNomeTitular(nomeTitular);
 		setSaldo(saldo);
 	}
 
+	/**
+	 * Sacar um valor da conta
+	 * @param valor - valor a ser sacado
+	 */
 	public void sacar(double valor) {
 		if (valor <= 0) {
 			throw new IllegalArgumentException("Valor tem que ser positivo");
@@ -21,6 +27,10 @@ public class Conta {
 		saldo -= valor;
 	}
 
+	/**
+	 * Depositar um valor na conta
+	 * @param valor - valor a ser depositado
+	 */
 	public void depositar(double valor) {
 		if (valor <= 0) {
 			throw new IllegalArgumentException("Valor tem que ser positivo");
@@ -29,6 +39,11 @@ public class Conta {
 		saldo += valor;
 	}
 
+	/**
+	 * Transferir um valor para outra conta
+	 * @param destinatario - conta que irá receber o valor
+	 * @param valor - valor a ser transferido
+	 */
 	public void transferir(Conta destinatario, double valor) {
 		if (valor <= 0) {
 			throw new IllegalArgumentException("Valor tem que ser positivo");
@@ -43,6 +58,12 @@ public class Conta {
 
 	}
 
+	/**
+	 * Simular um investimento com juros compostos de 1% ao mês
+	 * @param capitalInicial - valor inicial investido
+	 * @param tempo - tempo em meses
+	 * @return valor final do investimento
+	 */
 	public double simularInvestimento(double capitalInicial, int tempo) {
 		return capitalInicial * Math.pow(1 + 0.01, tempo);
 	}
