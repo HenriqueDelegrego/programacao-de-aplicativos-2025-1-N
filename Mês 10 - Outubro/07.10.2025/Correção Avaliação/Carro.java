@@ -23,15 +23,16 @@ public class Carro {
 
 		int anosDepreciados = anoAlvo - 2025;
 
-		double taxa = 0;
-
-		if (ano < 2015) {
-			taxa = 0.07;
-		} else {
-			taxa = 0.05;
-		}
+		double taxa = calcularTaxa();
 
 		return preco * Math.pow(1 - taxa, anosDepreciados);
+	}
+
+	private double calcularTaxa() {
+		if (ano < 2015) {
+			return 0.07;
+		}
+		return 0.05;
 	}
 
 	public String getMarca() {
