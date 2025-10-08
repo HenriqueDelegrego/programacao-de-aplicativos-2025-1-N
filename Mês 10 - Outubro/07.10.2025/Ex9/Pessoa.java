@@ -4,6 +4,7 @@ public class Pessoa {
 
 	private String nome;
 
+	// Objeto da classe LocalDate representa uma data (ano, mês, dia) sem fuso horário
 	private LocalDate dataNascimento;
 
 	public Pessoa(String nome, LocalDate dataNascimento) {
@@ -27,6 +28,8 @@ public class Pessoa {
 	}
 
 	public void setDataNascimento(LocalDate dataNascimento) {
+		// Verifica se a data de nascimento é nula ou se é uma data futura
+		// Se for, lança uma exceção
 		if (dataNascimento == null || dataNascimento.isAfter(LocalDate.now())) {
 			throw new IllegalArgumentException("Data de nascimento inválida");
 		}

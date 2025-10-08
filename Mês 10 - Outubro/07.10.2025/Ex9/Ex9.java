@@ -3,6 +3,7 @@ import java.time.LocalDate;
 public class Ex9 {
 	public static void main(String[] args) {
 
+		// LocalDate aceita objetos no formato (ano, mês, dia)
 		Pessoa p1 = new Pessoa("Henrique", LocalDate.of(2001, 10, 11));
 
 		Pessoa p2 = new Pessoa("Marcos", LocalDate.of(1985, 2, 27));

@@ -10,6 +10,10 @@ public class Familia {
 		listaPessoas = new ArrayList<Pessoa>();
 	}
 
+	/**
+	 * Encontra a pessoa mais velha da lista
+	 * @return Pessoa mais velha ou null se a lista estiver vazia
+	 */
 	public Pessoa encontrarPessoaMaisVelha() {
 		Pessoa pessoaMaisVelha = null;
 		LocalDate dataMaisVelha = LocalDate.now();
