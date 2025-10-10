@@ -10,6 +10,10 @@ public class Circulo {
 		setRaio(raio);
 	}
 
+	/**
+	 * Calcula a área do círculo
+	 * @return área do círculo
+	 */
 	public double calcularArea() {
 		return Math.PI * Math.pow(raio, 2);
 	}

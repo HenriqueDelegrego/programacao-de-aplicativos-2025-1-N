@@ -8,6 +8,10 @@ public class Cilindro extends Circulo {
 		setAltura(altura);
 	}
 
+	/**
+	 * Calcula o volume do cilindro, utilizando o cálculo da área do círculo (classe pai)
+	 * @return volume do cilindro
+	 */
 	public double calcularVolume() {
 		return calcularArea() * altura;
 	}
