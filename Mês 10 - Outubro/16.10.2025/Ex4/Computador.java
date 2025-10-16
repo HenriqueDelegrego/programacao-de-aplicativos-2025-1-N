@@ -1,4 +1,6 @@
-
+/**
+ * Classe que representa um computador e implementa a interface Dispositivo.
+ */
 public class Computador implements Dispositivo {
 
 	private String modelo;
@@ -11,16 +13,28 @@ public class Computador implements Dispositivo {
 		this.conectado = conectado;
 	}
 
+	/**
+	 * Liga o computador se estiver conectado.
+	 * @return true se o computador estiver ligado, false caso contrário.
+	 */
 	@Override
 	public boolean ligar() {
 		return conectado;
 	}
 
+	/**
+	 * Desliga o computador.
+	 * @return true se o computador estiver desligado, false caso contrário.
+	 */
 	@Override
 	public boolean desligar() {
 		return ligar();
 	}
 
+	/**
+	 * Obtém o status do computador.
+	 * @return uma string indicando se o computador está ligado ou desligado.
+	 */
 	@Override
 	public String obterStatus() {
 		if (ligar()) {

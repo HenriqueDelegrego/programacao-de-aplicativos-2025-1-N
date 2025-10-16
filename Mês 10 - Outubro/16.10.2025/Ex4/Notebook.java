@@ -1,4 +1,6 @@
-
+/**
+ * Classe que representa um notebook e implementa a interface Dispositivo.
+ */
 public class Notebook implements Dispositivo {
 
 	private String modelo;
@@ -12,6 +14,10 @@ public class Notebook implements Dispositivo {
 		this.conectado = conectado;
 	}
 
+	/**
+	 * Liga o notebook se estiver conectado ou se a bateria for maior que 10%.
+	 * @return true se o notebook estiver ligado, false caso contrário.
+	 */
 	@Override
 	public boolean ligar() {
 		if (conectado || bateria > 10) {
@@ -20,11 +26,19 @@ public class Notebook implements Dispositivo {
 		return false;
 	}
 
+	/**
+	 * Desliga o notebook.
+	 * @return true se o notebook estiver desligado, false caso contrário.
+	 */
 	@Override
 	public boolean desligar() {
 		return ligar();
 	}
 
+	/**
+	 * Obtém o status do notebook.
+	 * @return uma string indicando se o notebook está ligado ou desligado.
+	 */
 	@Override
 	public String obterStatus() {
 		if (ligar()) {
