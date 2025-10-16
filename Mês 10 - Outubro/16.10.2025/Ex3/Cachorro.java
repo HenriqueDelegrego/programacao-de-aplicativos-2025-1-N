@@ -8,6 +8,10 @@ public class Cachorro extends Animal {
 		this.raca = raca;
 	}
 
+	/**
+	 * Implementação do método abstrato emitirSom() para a classe Cachorro.
+	 * @return String representando o som emitido pelo cachorro.
+	 */
 	@Override
 	public String emitirSom() {
 		// TODO Auto-generated method stub

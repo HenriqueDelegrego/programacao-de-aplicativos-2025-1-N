@@ -1,4 +1,4 @@
-
+// As classes Cachorro e Gato implementam a interface Animal, garantindo que ambas forneçam uma implementação para o método emitirSom().
 public class Cachorro implements Animal {
 
 	private String especie;
@@ -12,6 +12,10 @@ public class Cachorro implements Animal {
 		this.raca = raca;
 	}
 
+	/**
+	 * Método que implementa o som característico do cachorro.
+	 * @return String representando o som "Au au".
+	 */
 	@Override
 	public String emitirSom() {
 		// TODO Auto-generated method stub

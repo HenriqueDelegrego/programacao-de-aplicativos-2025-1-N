@@ -8,6 +8,10 @@ public class Gato extends Animal {
 		this.castrado = castrado;
 	}
 
+	/**
+	 * Implementação do método abstrato emitirSom() para a classe Gato.
+	 * @return String representando o som emitido pelo gato.
+	 */
 	@Override
 	public String emitirSom() {
 		// TODO Auto-generated method stub

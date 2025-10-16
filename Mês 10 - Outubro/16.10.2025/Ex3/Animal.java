@@ -1,4 +1,9 @@
 
+/**
+ * Classe abstrata que representa um animal.
+ * Contém atributos comuns a todos os animais e um método abstrato para emitir som.
+ * Não pode ser instanciada diretamente.
+ */
 public abstract class Animal {
 
 	private String especie;
@@ -10,6 +15,10 @@ public abstract class Animal {
 		this.peso = peso;
 	}
 
+	/**
+	 * Método abstrato que deve ser implementado por todas as subclasses.
+	 * @return String representando o som emitido pelo animal.
+	 */
 	public abstract String emitirSom();
 
 	public String getEspecie() {
